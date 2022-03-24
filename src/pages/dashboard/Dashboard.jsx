@@ -22,6 +22,7 @@ const Dash = styled.div`
 const Wrapper = styled.div`
     min-height: 100vh;
     flex: 1;
+    padding: 50px;
 `
 
 export default Dashboard
