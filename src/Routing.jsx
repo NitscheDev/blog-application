@@ -1,8 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
+import Dashboard from './pages/dashboard/Dashboard'
 
 function Routing() {
     return (
-    <div>Routing</div>
+        <Routes>
+            <Route path='/dashboard' element={<Dashboard />}/>
+        </Routes>
     )
 }
 
