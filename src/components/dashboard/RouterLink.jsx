@@ -21,6 +21,7 @@ const Link = styled(NavLink)`
     border-radius: 5px;
     color: #85909F;
     margin-bottom: 10px;
+    font-weight: 600;
 
     svg {
         margin-right: 10px;

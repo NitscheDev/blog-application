@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { VscHome, VscArchive, VscAccount, VscSettingsGear } from 'react-icons/vsc';
+import { FiGrid, FiFileText, FiUsers, FiSettings } from 'react-icons/fi'
 import RouterLink from './RouterLink';
 
 function Sidebar() {
@@ -8,10 +8,10 @@ function Sidebar() {
             <div className="head">
                 <p>React<span className='colored'>Blog</span></p>
             </div>
-            <RouterLink to='/dashboard' name='overview' icon={<VscHome />} exact='true' />
-            <RouterLink to='/dashboard/posts' name='posts' icon={<VscArchive />} />
-            <RouterLink to='/dashboard/users' name='users' icon={<VscAccount />} />
-            <RouterLink to='/dashboard/settings' name='settings' icon={<VscSettingsGear />} />
+            <RouterLink to='/dashboard' name='overview' icon={<FiGrid />} exact='true' />
+            <RouterLink to='/dashboard/posts' name='posts' icon={<FiFileText />} />
+            <RouterLink to='/dashboard/users' name='users' icon={<FiUsers />} />
+            <RouterLink to='/dashboard/settings' name='settings' icon={<FiSettings />} />
         </StyledSidebar>
     )
 }
@@ -35,6 +35,7 @@ const StyledSidebar = styled.div`
         p {
             font-size: 24px;
             font-weight: 600;
+            color: #23242f;
             .colored { color: rgba(54,130,255,1); }
         }
     }
